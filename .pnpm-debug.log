@@ -1,0 +1,21 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "charter@0.0.0",
+    "stage": "dev",
+    "script": "vite",
+    "pkgname": "charter",
+    "err": {
+      "name": "pnpm",
+      "message": "charter@0.0.0 dev: `vite`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: charter@0.0.0 dev: `vite`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/opt/homebrew/Cellar/pnpm/6.29.1/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:92187:22)\n    at ChildProcess.emit (node:events:390:28)\n    at maybeClose (node:internal/child_process:1064:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)"
+    }
+  }
+}
