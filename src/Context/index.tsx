@@ -1,3 +1,12 @@
+interface IContentType {
+  number: number;
+  dispatch: Function;
+}
+
+type Props = React.PropsWithChildren<{
+  value: number;
+}>;
+
 import { createContext, useReducer } from 'react';
 
 // 1. 创建全局 Context
@@ -19,10 +28,14 @@ export const reducer = (state = initial, action: any) => {
 };
 
 // 3. 将全局 useReducer 返回的 state 和 dispatch 传递给全局 Context.Provider 的 value 中
-export const Provider = ({ children }) => {
+export const Provider: React.FunctionComponent<Props> = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initial);
 
+  const value = { state, dispatch };
+
   return (
-    <Context.Provider value={{ state, dispatch }}>{children}</Context.Provider>
+    <Context.Provider value={value as unknown as IContentType}>
+      {children}
+    </Context.Provider>
   );
 };
