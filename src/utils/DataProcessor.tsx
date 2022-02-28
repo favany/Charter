@@ -4,7 +4,7 @@ type IInput = {
   pov: any;
 };
 
-const DataProcessor = () => {
+const DataProcessor: () => Record<string, any> = () => {
   setTimeout(() => {}, 3000);
   const option = {
     legend: {},
