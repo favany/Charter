@@ -8,7 +8,6 @@ import Displayer from './Displayer';
 const App = () => {
   return (
     <>
-      <h1>你好，美好的一切从这里开始</h1>
       <Provider value={0}>
         <Selector />
         <Displayer />

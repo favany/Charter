@@ -19,7 +19,7 @@ export const reducer = (state = initial, action: any) => {
   console.log(action, state.number);
   switch (action.type) {
     case 'Add':
-      return { number: state.number + 1 };
+      return { number: state.number + 52 };
       break;
 
     default:

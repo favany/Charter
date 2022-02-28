@@ -5,6 +5,7 @@ specifiers:
   '@types/react-dom': ^17.0.10
   '@vitejs/plugin-react': ^1.0.7
   antd: ^4.18.8
+  echarts: ^5.3.0
   react: ^17.0.2
   react-dom: ^17.0.2
   typescript: ^4.5.4
@@ -12,6 +13,7 @@ specifiers:
 
 dependencies:
   antd: 4.18.8_react-dom@17.0.2+react@17.0.2
+  echarts: 5.3.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
 
@@ -554,6 +556,13 @@ packages:
 
   /dom-align/1.12.2:
     resolution: {integrity: sha512-pHuazgqrsTFrGU2WLDdXxCFabkdQDx72ddkraZNih1KsMcN5qsRSTR9O4VJRlwTPCPb5COYg3LOfiMHHcPInHg==}
+    dev: false
+
+  /echarts/5.3.0:
+    resolution: {integrity: sha512-zENufmwFE6WjM+24tW3xQq4ICqQtI0CGj4bDVDNd3BK3LtaA/5wBp+64ykIyKy3QElz0cieKqSYP4FX9Lv9MwQ==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.3.0
     dev: false
 
   /electron-to-chromium/1.4.73:
@@ -1508,6 +1517,10 @@ packages:
     resolution: {integrity: sha1-bkWxJj8gF/oKzH2J14sVuL932jI=}
     dev: false
 
+  /tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: false
+
   /typescript/4.5.5:
     resolution: {integrity: sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==}
     engines: {node: '>=4.2.0'}
@@ -1537,3 +1550,9 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /zrender/5.3.0:
+    resolution: {integrity: sha512-Ln2QB5uqI1ftNYMtCRxd+XDq6MOttLgam2tmhKAVA+j0ko47UT+VNlDvKTkqe4K2sJhBvB0EhYNLebqlCTjatQ==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false
